@@ -15,7 +15,7 @@ function App() {
       .get(`./positions.json?description=${description}&location=${location}`)
       .then((res) => {
         jobs.current = res.data;
-        //console.log('This is jobs.current', jobs.current, jobs.current[0]);
+        console.log(jobs.current[0]);
         setDataReady(true);
       })
       .catch(() => {
@@ -24,7 +24,7 @@ function App() {
   };
 
   useEffect(() => {
-    newQuery('engineer', 'usa');
+    //newQuery('engineer', 'usa');
   }, []);
 
   return (

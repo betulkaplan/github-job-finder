@@ -2,6 +2,11 @@
   color: salmon;
   background-color: white;
   width: 500px;
-  height: 150px;
+  /*
+  height: 150px; */
   margin: 15px;
+}
+
+img {
+  width: 100px;
 }
